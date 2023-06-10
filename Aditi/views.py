@@ -18,4 +18,8 @@ def contact(request):
     #return HttpResponse("This is the contact")
     return render(request, 'contact.html')
 
+def main(request):
+    #return HttpResponse("This is the contact")
+    return render(request, 'main.html')
+
 
