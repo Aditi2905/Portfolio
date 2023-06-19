@@ -16,6 +16,12 @@ def about(request):
 
 def contact(request):
     #return HttpResponse("This is the contact")
+    if request.method=="POST":
+        # print("This is Post")
+        name = request.POST['name']
+        email = request.POST['email']
+        msg = request.POST['msg']
+        print(name, email, msg)
     return render(request, 'contact.html')
 
 def main(request):
